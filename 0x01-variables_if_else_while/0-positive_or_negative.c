@@ -10,7 +10,12 @@
  */
 int main(void)
 {
-	int n;
+  /**
+   * variable n has neen declared
+   * coding then assigns the random value.
+   */
+   int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
