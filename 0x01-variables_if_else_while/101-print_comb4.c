@@ -1,76 +1,69 @@
-#include<stdio.h>
+#include <stdio.h>
+
 
 
 /**
- *  * main - Prints all possible combinations of three different digits
- * in ascending order, separated by a comma followed by a space
+ * main - Writes 001 - 999
+ * @void: Empty parameter list for main.
  *
- * Return: Always 0
+ * Description: Writes all unique combinations
+ * of 3 numbers
  *
+ * Return: 0 for success
  */
 int main(void)
 
 {
 
-	int i, j, k;
+		int i, j, k;
 
-	{
 
-		for (i = 48; i < 58; i++)
 
-		{
-
-			for (j = i; j < 58; j++)
-
-			{
-
-				for (k = j; k < 58; k++)
-
-				{
-
-					if (i == j || j == k || i == k)
+			for (i = '0'; i <= '9'; i++)
 
 					{
 
-						continue;
+								for (j = '0'; j <= '9'; j++)
 
-					}
+											{
 
-					putchar(i);
+															for (k = '0'; k <= '9'; k++)
 
-					putchar(j);
+																			{
 
-					putchar(k);
+																								if ((i < j) & (j < k) & (k <= '9'))
 
-					if (i == 55 && j == 56 && k == 57)
+																													{
 
-					{
+																																			putchar(i);
 
-						break;
+																																								putchar(j);
 
-					}
+																																													putchar(k);
 
-					else
 
-					{
 
-						putchar(',');
+																																																		if ((i + j + k) < 168)
 
-						putchar(' ');
+																																																								{
 
-					}
+																																																															putchar(',');
 
-				}
+																																																																					putchar(' ');
 
-			}
+																																																																										}
 
-		}
+																																																						}
 
-	}
+																											}
 
-	putchar('\n');
+																	}
 
-	return (0);
+									}
+
+				putchar('\n');
+
+					return (0);
 
 }
 
