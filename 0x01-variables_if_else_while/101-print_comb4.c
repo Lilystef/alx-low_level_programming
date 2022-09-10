@@ -1,61 +1,50 @@
+/*
+ * File: 101-print_comb4.c
+ *Auth: Lilystef
+ */
 #include <stdio.h>
-
-
-
 /**
- * main - Writes 001 - 999
- * @void: Empty parameter list for main.
+ * main - Prints all possible combinations
  *
- * Description: Writes all unique combinations
- * of 3 numbers
- *
- * Return: 0 for success
+ * Return: Always 0.
  */
 int main(void)
 
 {
 
-		int i, j, k;
+		int digit1, digit2, digit3;
 
 
 
-			for (i = '0'; i <= '9'; i++)
+			for (digit1 = 0; digit1 < 8; digit1++)
 
 					{
 
-								for (j = '0'; j <= '9'; j++)
+								for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 
 											{
 
-															for (k = '0'; k <= '9'; k++)
+															for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 
 																			{
 
-																								if ((i < j) & (j < k) & (k <= '9'))
+																								putchar((digit1 % 10) + '0');
 
-																													{
+																												putchar((digit2 % 10) + '0');
 
-																																			putchar(i);
-
-																																								putchar(j);
-
-																																													putchar(k);
+																																putchar((digit3 % 10) + '0');
 
 
 
-																																																		if ((i + j + k) < 168)
+																																				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
 
-																																																								{
+																																										continue;
 
-																																																															putchar(',');
+																																								putchar(',');
 
-																																																																					putchar(' ');
+																																												putchar(' ');
 
-																																																																										}
-
-																																																						}
-
-																											}
+																																															}
 
 																	}
 
