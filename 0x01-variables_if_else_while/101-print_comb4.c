@@ -20,19 +20,19 @@ int main(void)
 				{
 				if (i == j || j == k || i == k)
 					{
-						continue;
+					continue;
 					}
 					putchar(i);
 					putchar(j);
 					putchar(k);
 					if (i == 55 && j == 56 && k == 57)
 					{
-						break;
+					break;
 					}
 					else
 					{
-						putchar(',');
-						putchar(' ');
+					putchar(',');
+					putchar(' ');
 					}
 				}
 			}
