@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include "main.h"
 
@@ -29,6 +28,6 @@ continue;
 }
 putchar('\n');
 }
-putchar('\n');
 }
+putchar('\n');
 }
