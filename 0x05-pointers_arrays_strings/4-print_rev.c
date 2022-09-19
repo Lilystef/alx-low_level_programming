@@ -1,17 +1,15 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_rev - prints a string in reverse order
- * @s: String to reverse
- * Return: Nothing
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-void print_rev(char *s)
+int main(void)
 {
-	int len = strlen(s);
+	char *str;
 
-	while (len--)
-		putchar(*(s + len));
-	putchar(10);
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	print_rev(str);
+	return (0);
 }
