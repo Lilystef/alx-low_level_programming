@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+#include <stdio.h>
+/**
+ *void prototypes()
+ *int prototypes()
+ *char prototypes()
+ */
 char *_strncpy(char *dest, char *src, int n);
 int _putchar(char);
 char *_strcat(char *dest, char *src);
@@ -14,5 +19,6 @@ char *rot13(char *str);
 void print_number(int n);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_buffer(char *b, int size);
+char *add_strings(char *n1, char *n2, char *r, int r_index);
 
 #endif
