@@ -6,11 +6,11 @@
  * Return: returns pointer to the allocated memory or NULL
  */
 
-vois *malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
-	int *mem = malloc(b);
-	if (mem == 0)
-		exit(98);
+int *mem = malloc(b);
+if (mem == 0)
+	exit(98);
 
-	return (mem);
+return (mem);
 }
