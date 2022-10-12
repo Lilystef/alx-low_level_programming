@@ -1,3 +1,4 @@
+/* A function that prints a name */
 #include <stdio.h>
 #include "function_pointers.h"
 
